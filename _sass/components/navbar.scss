@@ -1,0 +1,125 @@
+@import "bootstrap/scss/mixins/_breakpoints";
+
+.header {
+	justify-content: space-between;
+	background: #181818;
+	height: 56px;
+	padding: 8px 16px;
+	margin-top: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+	@include media-breakpoint-up(md) {	
+		height: 102px;
+		padding: 20px 80px;
+	}
+
+	&__left {
+		display: block;
+		vertical-align: middle;
+		margin-top: auto;
+		margin-bottom: auto;
+
+		&__logo {
+			font-family: Exo2-Regular;
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: left;
+			margin-top: 0px;
+			margin-bottom: 0px;
+
+			@include media-breakpoint-up(md) {	
+				font-size: 32px;
+			}
+		}
+
+		&__logo:hover {
+			color: #006AFF;
+		}
+
+		&__description {
+			font-family: Exo2-Regular;
+			font-size: 10px;
+			color: #8B8B8B;
+			margin-top: 4px;
+
+			@include media-breakpoint-up(md) {	
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__right {
+		display: none;
+		margin-top: auto;
+		margin-bottom: auto;
+		float: right;
+
+		@include media-breakpoint-up(md) {	
+			display: block;
+		}
+
+		&__links {
+			font-family: Exo2-Regular;
+			font-size: 16px;
+			color: #FFFFFF;
+			text-align: right;
+			list-style-type: none;
+			display: inline;
+		}
+
+		&__link-current {
+			font-family: Exo2-Bold;
+			font-size: 16px;
+			color: #FFFFFF;
+		}
+
+		&__link-inactive {
+			font-family: Exo2-Regular;
+			font-size: 16px;
+			color: #525252;
+		}
+	}
+
+	&__hamburger {
+		width: 25px;
+		float: right;
+
+		@include media-breakpoint-up(md) {	
+			display: none;
+		}
+	}
+}	
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header__link {
+	color: #FFFFFF;
+}
+
+.header__link:hover {
+	color: #006AFF;
+}
+
+li {
+	display: inline;
+}
+
+.mobile_nav {
+	display: none;
+	transition: 1s;
+	height: 100vh;
+	background: #181818;
+	padding: 0px 16px;
+
+	li {
+		display: list-item;
+		text-align: left;
+		margin-top: 24px;
+	}
+}

@@ -55,15 +55,57 @@
 			<li class="header__right__links_4"><a href="/blog" class="header__link">blogger</a></li>
 		</nav>
 	</div>
-	<img class="header__hamburger" src="/assets/img/hamburger.svg">
+	<a href="javascript:void(0);" class="icon" style="margin-top: 12px" onclick="myFunction()">
+		<img class="header__hamburger" src="/assets/img/hamburger.svg" id="hamburger">
+	</a>
 </div>
 
-<!-- Sticky Header -->
+<div class="mobile_nav" id="mobile-nav">
+	<div class="d-flex">
+		<div class="header__left">
+			<a href="/"><h1 class="header__left__logo">James Terry</h1></a>
+			<p class="header__left__description">Product-obsessed startup entrepreneur. <a href="/about" class="header__link">About me</a>.</p>
+		</div>
+		<div class="mobile-nav__cross">
+			<img src="/assets/img/Cross.svg" id="nav-cross">
+		</div>
+	</div>
+	<div>
+		<nav class="header__right__links" style="display: unset">
+			<li class="header__right__links_1"><a href="/advisor" class="header__link">advisor</a></li>
+			<li class="header__right__links_2"><a href="/designer" class="header__link">designer</a></li>
+			<li class="header__right__links_3"><a href="/investor" class="header__link">investor</a></li>
+			<li class="header__right__links_4"><a href="/blog" class="header__link">blogger</a></li>
+		</nav>
+	</div>
+</div>
+
+<script>
+	function myFunction() {
+	  var x = document.getElementById("mobile-nav");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}
+</script>
+
+<!--
+<script>
+$(document).ready(function() {
+    var currentPage = "content"; // <--Change this to the id of your span after the nav-
+    //Change the background color now
+    $("#nav-" + currentPage).addClass("header__right__link-current");
+});
+</script>
+-->
+
+<!--Sticky Header
 <script type="text/javascript">
   window.onscroll = function() {myFunction()};
 
   var header = document.getElementById ("header");
-  var content = document.getElementById ("content");
   var sticky = header.offsetTop;
 
   function myFunction() {
@@ -74,9 +116,10 @@
     }
   }
 </script>
+-->
     
     <div class="main-content" id="content">
-      <div class="d-flex flex-md-nowrap page">
+      <div class="d-flex flex-md-nowrap page top-content">
 	<div class="abouttext">
 		<h1 class="pagetext__header">About me</h1>
 		<h2 class="pagetext__subheader">Hello.</h2>
@@ -131,6 +174,20 @@
 	</div>
 </div>
     </div>
+
+    <footer class="footer d-flex">
+	<div class="footer__social">
+		<a href="https://twitter.com/phatjme"><img src="/assets/img/twitter.svg" class="footer__icon"></a>
+		<a href="https://medium.com/phatjme"><img src="/assets/img/medium.svg" class="footer__icon"></a>
+		<a href="https://github.com/phatjme"><img src="/assets/img/github.svg" class="footer__icon"></a>
+		<a href="mailto:hello@jamesterry.co.uk"><img src="/assets/img/mail.svg" class="footer__icon"></a>
+	</div>
+	<div class="footer__disclaimer">
+		<p class="footer__disclaimer__text">copyright James Terry, 2019</p>
+	</div>
+</footer>
+
+    
     <div id="modal-root"></div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

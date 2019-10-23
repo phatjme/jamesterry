@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Test Post!"
+date:   2019-10-19 20:39:39 +0100
+published: true
+excerpt_separator: <!--more-->
+---
+
+Here's my test post, if it works it should only display this sentence. But in theory I should be able to type as much as I want into this box before it 'cuts' it off...
+
+Even a new paragraph!
+
+<!--more-->
+But, not this one. And definitely, not this one.

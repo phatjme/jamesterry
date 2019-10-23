@@ -1,0 +1,125 @@
+@import "bootstrap/scss/mixins/_breakpoints";
+
+main {
+	background-image: url("/assets/img/james_terry.png");
+	background-position: bottom;
+	background-color: #F6F6F6;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 32px 16px 50% 16px;
+
+	@include media-breakpoint-up(md) {	
+		padding-top: 80px;
+		background-size: cover;
+		height: 100vh;
+	}
+}
+
+.hero {
+
+	&__box {
+		background: #FFFFFF;
+		box-shadow: 0 0 16px 0 rgba(0,0,0,0.25);
+		font-family: Exo2-Regular;
+		font-size: 12px;
+		color: #181818;
+		width: 100%;
+		padding: 12px 16px;
+		margin-bottom: 16px;
+
+		@include media-breakpoint-up(md) {
+			width: 463px;
+			min-width: 240px;
+			margin-left: 25%;
+			margin-bottom: 16px;
+			padding: 16px 24px;
+			font-size: 16px;
+		}
+	}
+	
+	&__box:hover {
+		background: #006AFF;
+		border: 4px solid #FFFFFF;
+		font-size: 12px;
+		color: #FFFFFF;
+		padding: 8px 12px;
+
+		@include media-breakpoint-up(md) {
+			padding: 12px 20px;
+		}
+
+		p {
+			color: #FFFFFF;
+		}
+	}
+
+	&__text {
+		margin-bottom: 0px;
+	}
+
+	&__post-title {
+		font-size: 16px;
+
+		@include media-breakpoint-up(md) {
+			font-size: 24px;
+			margin-top: 8px;
+		}
+	}
+
+	&__text-link {
+		margin-top: 8px;
+		color: #006AFF;
+		margin-bottom: 0px;
+	}
+}
+
+footer {
+	background: #181818;
+	justify-content: space-between;
+	padding: 8px 16px;
+	bottom: 0;
+
+	@include media-breakpoint-up(md) {
+		padding-left: 80px;
+		padding-right: 80px;
+		min-height: 48px;
+	}
+}
+
+.footer__social {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.footer__icon {
+	margin-right: 16px;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	@include media-breakpoint-down(md) {
+		width: 15px;
+		margin-right: 12px;
+	}
+}
+
+.footer__icon:hover {
+	opacity: 0.5;
+}
+
+.footer__disclaimer {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.footer__disclaimer__text {
+	font-family: Exo2-Regular;
+	font-size: 12px;
+	color: #8B8B8B;
+	text-align: right;
+	margin-bottom: 0px;
+
+	@include media-breakpoint-up(md) {
+		font-size: 16px;
+		color: #FFFFFF;
+	}
+}

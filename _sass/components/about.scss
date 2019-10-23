@@ -1,0 +1,26 @@
+@import "bootstrap/scss/mixins/_breakpoints";
+
+.abouttext {
+	width: 40%;
+}
+
+.pageimage {
+
+	&__image {
+		width: 100%;
+
+		@include media-breakpoint-up(md) {
+
+		}
+	}
+
+	&__text {
+		opacity: 0.5;
+		font-family: Exo2-Regular;
+		font-size: 12px;
+		color: #181818;
+
+		@include media-breakpoint-up(md)
+			font-size: 16px;
+	}
+}

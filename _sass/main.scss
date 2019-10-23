@@ -1,0 +1,58 @@
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/mixins/_breakpoints";
+
+@import "components/index";
+@import "components/navbar";
+@import "components/advisor";
+@import "components/designer";
+@import "components/investor";
+@import "components/about";
+@import "components/blog";
+@import "components/post";
+
+h1 {
+	font-family: Exo2-Regular;
+	font-size: 12px;
+	color: #8B8B8B;
+
+	@include media-breakpoint-up(md) {
+		font-size: 16px;
+	}
+}
+
+h2 {
+	font-family: Exo2-Regular;
+	font-size: 16px;
+	color: #181818;
+
+	@include media-breakpoint-up(md) {
+		font-size: 24px;
+	}
+}
+
+.jumbatron h3 {
+	font-size: 12px;
+	opacity: 0.5;
+	font-family: Exo2-Regular;
+	color: #181818;
+
+	@include media-breakpoint-up(md) {
+		font-size: 16px;
+	}
+}
+
+.main-content {
+	margin-top: 56px;
+
+	@include media-breakpoint-up(md) {
+		margin-top: 104px;
+	}
+}
+
+.top-content {
+	padding-top: 16px;
+
+	@include media-breakpoint-up(md) {
+		padding-top: 48px;
+	}
+}

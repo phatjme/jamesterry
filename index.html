@@ -5,8 +5,7 @@ description: James Terry is great.
 sitemap: true
 ---
 
-<!doctype html>
-<main class="main d-flex">
+<main class="main d-flex top-content">
 	<div>
 		<a href="/advisor"><div class="hero__box">
 			<p class="hero__text" style="opacity: 0.5">Early stage startup?</p>
@@ -20,25 +19,15 @@ sitemap: true
 			<p class="hero__text" style="opacity: 0.5">Looking for angel investors?</p>
 			<p class="hero__text">Get in touch →</p>
 		</div></a>
-		<a href="/blog"><div class="hero__box">
+		{% for post in site.posts limit:1 %}
+		<a href="{{ post.url }}"><div class="hero__box">
 			<p class="hero__text" style="opacity: 0.5">Latest post</p>
-			<h3 class="hero__post-title">The myth of startup overwork</h3>
-			<p >You’re working 50 hour weeks and bragging about it. Sound familiar? It’s the way we’re told to work as startup founders. But it’s not right.</p>
+			<h3 class="hero__post-title">{{post.title}}</h3>
+			<p>{{ post.excerpt }}</p>
 			<p class="hero__text-link">Read more →</p>
 		</div></a>
+		{% endfor %}
 		<div>
 		</div>
 	</div>
 </main>
-
-<footer class="footer d-flex">
-	<div class="footer__social">
-		<a href="https://twitter.com/phatjme"><img src="assets/img/twitter.svg" class="footer__icon"></a>
-		<a href="https://medium.com/phatjme"><img src="assets/img/medium.svg" class="footer__icon"></a>
-		<a href="https://github.com/phatjme"><img src="assets/img/github.svg" class="footer__icon"></a>
-		<a href="mailto:hello@jamesterry.co.uk"><img src="assets/img/mail.svg" class="footer__icon"></a>
-	</div>
-	<div class="footer__disclaimer">
-		<p class="footer__disclaimer__text">copyright James Terry, 2019</p>
-	</div>
-</footer>

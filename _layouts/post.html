@@ -1,0 +1,30 @@
+---
+layout: page
+---
+
+<div class="d-flex flex-md-nowrap page top-content">
+	<div class="main-section">
+		<div class="top-section">
+			<div>
+				<h1><time class="pagetext__header" datetime="{{page.date}}">{{ page.date | date: "%-d %B %Y" }}</time></h1>
+				<h2 class="pagetext__subheader" style="margin-top: -6px">{{page.title}}</h2>
+				<p>By James Terry. Follow <a href="https://twitter.com/phatjme">@phatjme</a> on Twitter.</p>
+			</div>
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="tweet__button" data-show-count="false">Tweet post</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+		<div>
+			{{content}}
+		</div>
+	</div>	
+	<div class="sidebar">
+		<h2 class="pagetext__subheader">Other posts</h2>
+		<p>Start a company, scale it and focus on the right things.</p>
+		{% for post in site.posts %}
+			<a href="{{ post.url }}"><div class="sidebar-posts">
+				<p><time class="pagetext__header" datetime="{{page.date}}">{{ post.date | date: "%-d %B %Y" }}</time></p>
+				<p>{{post.title}}</p>
+				<p style="color: #006AFF">Read post →</p>
+			</a></div>
+		{% endfor %}
+	</div>
+</div>

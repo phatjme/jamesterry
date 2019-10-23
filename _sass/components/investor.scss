@@ -1,0 +1,31 @@
+@import "bootstrap/scss/mixins/_breakpoints";
+
+
+.investment {
+	background: #FFFFFF;
+	box-shadow: 0 0 16px 0 rgba(0,0,0,0.10);	
+	padding: 12px 12px;
+
+	@include media-breakpoint-up(md) {
+		padding: 24px 24px;
+	}
+
+	&__logo {
+		width: 64px;
+		height: 64px;
+		margin-right: 12px;
+		margin-top: auto;
+		margin-bottom: auto;
+
+		@include media-breakpoint-up(md) {
+			width: 120px;
+			height: 120px;
+			margin-right: 24px;
+		}
+	}
+
+	&__text {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+}
