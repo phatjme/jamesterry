@@ -20,7 +20,8 @@
 		font-size: 12px;
 		color: #181818;
 
-		@include media-breakpoint-up(md)
+		@include media-breakpoint-up(md) {
 			font-size: 16px;
+		}
 	}
 }
