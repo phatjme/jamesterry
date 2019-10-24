@@ -1,6 +1,5 @@
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap/scss/mixins/_breakpoints";
-@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
 
 @import "components/index";
 @import "components/navbar";
@@ -10,6 +9,18 @@
 @import "components/about";
 @import "components/blog";
 @import "components/post";
+
+@font-face {
+  font-family: "Exo2";
+  src: url("/assets/fonts/Exo2-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Exo2";
+  src: url("/assets/fonts/Exo2-Regular.ttf");
+  font-weight: normal;
+}
 
 h1 {
 	font-family: Exo2-Regular;
