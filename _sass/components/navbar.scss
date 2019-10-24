@@ -92,6 +92,14 @@
 	}
 }	
 
+.icon {
+	display: block;
+
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}
+
 .sticky {
     position: fixed;
     top: 0;
