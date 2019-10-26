@@ -1,7 +1,11 @@
 @import "bootstrap/scss/mixins/_breakpoints";
 
 .abouttext {
-	width: 40%;
+	
+
+	@include media-breakpoint-up(md) {
+		width: 40%;
+	}
 }
 
 .pageimage {
@@ -10,7 +14,7 @@
 		width: 100%;
 
 		@include media-breakpoint-up(md) {
-
+			margin-left: 16px;
 		}
 	}
 
@@ -22,6 +26,7 @@
 
 		@include media-breakpoint-up(md) {
 			font-size: 16px;
+			margin-left: 16px;
 		}
 	}
 }
