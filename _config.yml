@@ -42,6 +42,8 @@ social:
   # bing: 1234
 lang: en_GB
 
+future: true
+
 permalink: /blog/:title
 
 # Build settings
