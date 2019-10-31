@@ -22,7 +22,7 @@ sitemap: true
 		{% for post in site.posts limit:1 %}
 		<a href="{{ post.url }}"><div class="hero__box">
 			<p class="hero__text" style="opacity: 0.5">Latest post</p>
-			<h3 class="hero__post-title">{{post.title}}</h3>
+			<h2 class="hero__post-title">{{post.title}}</h2>
 			<p>{{ post.excerpt }}</p>
 			<p class="hero__text-link">Read more →</p>
 		</div></a>
