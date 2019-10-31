@@ -34,6 +34,6 @@ The list could go on...
 
 In a nutshell, this aim of this blog is to help you figure sh*t out before it's too late.
 
-Stay in the loop via [the mailing list](#). 
+Stay in the loop via [the mailing list](http://eepurl.com/gIgpmb). 
 
 First post... sometime... soon.
