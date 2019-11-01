@@ -1,12 +1,12 @@
 @import "bootstrap/scss/mixins/_breakpoints";
 
 main {
-	background-image: url("/assets/img/james_terry.png");
+	background-image: url("/assets/img/James_Terry-min.jpeg");
 	background-position: bottom;
-	background-color: #F6F6F6;
+	background-color: #FDFDFD;
 	background-size: contain;
 	background-repeat: no-repeat;
-	padding: 32px 16px 50% 16px;
+	padding: 32px 16px 60% 16px;
 
 	@include media-breakpoint-up(md) {	
 		padding-top: 80px;
