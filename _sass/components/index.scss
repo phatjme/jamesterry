@@ -9,7 +9,7 @@ main {
 	padding: 32px 16px 60% 16px;
 
 	@include media-breakpoint-up(md) {	
-		padding-top: 80px;
+		padding-top: 0px;
 		background-size: cover;
 		height: 100vh;
 	}
@@ -37,7 +37,7 @@ main {
 		}
 	}
 	
-	&__box:hover {
+/*	&__box:hover {
 		background: #006AFF;
 		border: 4px solid #FFFFFF;
 		font-size: 12px;
@@ -51,10 +51,22 @@ main {
 		p {
 			color: #FFFFFF;
 		}
+	}*/
+
+	&__link {
+		font-family: Exo2-Bold;
+		font-weight: 900;
+		color: #006AFF;
+		line-height: 24px;
+	}
+
+	&__link:hover {
+		color: #006AFF;
 	}
 
 	&__text {
 		margin-bottom: 0px;
+		line-height: 24px;
 	}
 
 	&__post-title {
