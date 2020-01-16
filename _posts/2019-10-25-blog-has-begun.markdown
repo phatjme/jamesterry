@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "The blog has begun..."
+title:  "Coming soon..."
 date:   2019-10-19 20:39:39 +0100
-published: false
+published: true
 excerpt_separator: <!--more-->
 ---
 
 After relentlessly taking notes on the countless mistakes (and occasional successes) of building Study Rocket and Adapt over the last 3 years, I'm finally compiling them into something useful...
 <!--more-->
 
-The answer? A blog. It's likely going to be rather sporadic and disjointed, but hopefully there's a few nuggets of insight that help those of you on a similar journey.
+This blog is likely going to be rather sporadic and disjointed, but hopefully there's a few nuggets of insight that help those of you on a similar journey.
 
-Ultimately, I'm very lucky to have the time to put these posts together, after my recent step-back as CEO of Adapt.
+I'm very lucky to have the time to put these posts together, after my recent step-back as CEO of Adapt.
 
-While I'm going to continue to support the business from arms length as the Executive Chairman, most of my time will now be focused on writing, advising, coding and, most likely, building stuff. 
+While I'm going to continue to support the business from arms length as Chairman, most of my time will now be focused on writing, advising, coding and, most likely, building new stuff. 
 
 My aim is to amplify the lessons I've learned over the years of doing some things very, very wrong, and others very right, by dissecting and sharing them.
 
@@ -30,7 +30,7 @@ Here are the topics that I imagine will come up most frequently:
 * Focusing relentlessly on what matters
 * Building a culture of effectiveness and efficiency
 
-The list could go on...
+And more...
 
 In a nutshell, this aim of this blog is to help you figure sh*t out before it's too late.
 

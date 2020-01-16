@@ -18,6 +18,7 @@ sitemap: true
 			<a class="top-section__subscribe" href="http://eepurl.com/gIgpmb">Subscribe to mailing list</a>
 		</div>
 		<div class="blog-posts">
+			
 			{% for post in site.posts %}
 				<a href="{{ post.url }}"><div class="blog-post">
 					<p><time class="pagetext__header" datetime="{{page.date}}">{{ post.date | date: "%-d %B %Y" }}</time></p>
