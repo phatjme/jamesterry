@@ -64,6 +64,14 @@
 		margin-bottom: 0px;
 	}
 
+	&__price-texts {
+		flex-direction: column;
+
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+		}
+	}
+
 	&__price {
 		font-family: Exo2-Regular;
 		color: #006AFF;	
