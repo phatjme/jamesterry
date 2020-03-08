@@ -1,0 +1,104 @@
+@import "bootstrap/scss/mixins/_breakpoints";
+
+.offer {
+
+	&__box {
+		border-color: #006AFF;
+		border-width: 4;
+		border-style: solid;
+		padding: 16px 24px;
+		margin-bottom: 24px;
+	}
+
+	&__header {
+		font-family: Exo2-Bold;
+		font-size: 20pt;
+	}
+
+	&__subheader {
+		opacity: 0.4;
+		font-family: Exo2-Bold;
+		margin: 16px 0px 8px 0px;
+	}
+
+	&__inclusion {
+		margin-bottom: 8px;
+	}
+
+	&__inclusion strong {
+		color: #006AFF;
+	}
+
+	&__service {
+		font-family: Exo2-Bold;
+		color: #006AFF;	
+		font-size: 12px;
+
+		@include media-breakpoint-up(md) {
+			font-size: 16px;
+		}
+	}
+
+	&__bottom {
+		margin-top: 40px;
+	}
+
+	&__left-box {
+		border-top-color: #006AFF;
+		border-top-style: solid;
+		padding: 12px 24px 0px 24px;
+		margin: -16px -24px;
+		width: 100%;
+	}
+
+	&__right-box {
+		background-color: #006AFF;
+		padding: 12px 24px 0px 24px;
+		margin: -16px -24px;
+		width: 100%;
+	}
+
+	&__right-box-text {
+		color: #FFFFFF;
+		text-align: right;
+		margin-bottom: 0px;
+	}
+
+	&__price {
+		font-family: Exo2-Regular;
+		color: #006AFF;	
+		font-size: 16pt;	
+		margin-right: 5px;
+		margin-bottom: 0px;
+	}
+}
+
+.availability {
+	&__left-box {
+		background: #006AFF;
+		box-shadow: 0 0 16px 0 rgba(0,0,0,0.10);
+		text-align: center;
+		width: 100%;
+		padding: 8px 0px;
+		margin-right: 8px;
+	}
+
+	&__right-box {
+		background: #FFFFFF;
+		box-shadow: 0 0 16px 0 rgba(0,0,0,0.10);
+		text-align: center;
+		width: 100%;
+		padding: 8px 0px;
+		margin-left: 8px;
+	}
+
+	&__top-text {
+		opacity: 0.5;
+		margin-bottom: 4px;
+	}
+
+	&__number-text {
+		font-family: Exo2-Bold;
+		margin-top: 0;
+	}
+}

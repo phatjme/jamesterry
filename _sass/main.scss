@@ -1,6 +1,7 @@
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap/scss/mixins/_breakpoints";
 
+
 @import "components/index";
 @import "components/navbar";
 @import "components/advisor";
@@ -9,6 +10,7 @@
 @import "components/about";
 @import "components/blog";
 @import "components/post";
+@import "components/offer";
 
 @font-face {
   font-family: "Exo2-Bold";
